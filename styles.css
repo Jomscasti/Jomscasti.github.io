@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #101010;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #151515;
+    border-bottom: 3px solid #FF6F00;
+    margin-top: 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FF6F00;
+}
+
+/* Product Overview */
+.product-overview {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+
+.product-overview h2 {
+    font-size: 28px;
+    color: #FF6F00;
+}
+
+/* Content Layout */
+.content {
+    gap: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail {
+    max-width: 410px; /* Set maximum width for thumbnails */
+    height: 116px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover; /* Adjust this to cover to maintain aspect ratio */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Image */
+.main-image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Features */
+.features {
+    background-color: #1b1b1b;
+    padding: 8px;
+    border-radius: 20px;
+    height: 500px; /* Adjust as needed to match the desired height */
+}
+
+.features h2 {
+    font-size: 20px; /* Adjust font size */
+    color: #FF6F00;
+}
+
+.feature-list {
+    padding: 15px; /* Space within the feature list */
+}
+
+.feature h3 {
+    font-size: 15px; /* Font size for feature titles */
+    color: #f8b700;
+    margin-bottom: 2px; /* Space below feature titles */
+}
+
+.feature p {
+    font-size: 14.5px; /* Font size for feature descriptions */
+}
+
+/* Product Specs */
+.product-specs {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    margin: 50px 0;
+}
+
+.product-specs h2 {
+    font-size: 28px;
+    color: #FF6F00;
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    margin: 50px 0;
+}
+
+.call-to-action h2 {
+    font-size: 24px;
+    color: #FF6F00;
+}
+
+.add-to-cart {
+    background-color: #FF6F00;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sidebar,
+    .main-image,
+    .features {
+        width: 100%;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-image img {
+        height: 250px;
+        object-fit: cover;
+    }
+    .features {
+        height: 420px; 
+    }
+}
+
+@media (min-width: 769px) {
+    .sidebar {
+        flex: 1; /* Allow sidebar to grow */
+    }
+
+    .main-image {
+        flex: 2; /* Allow main image to grow more */
+    }
+
+    .features {
+        flex: 1;/* Adjust features to grow */
+    }
+}
