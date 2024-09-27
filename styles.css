@@ -50,10 +50,10 @@ body {
 }
 
 .thumbnail {
-    max-width: 410px; /* Set maximum width for thumbnails */
-    height: 116px; /* Maintain aspect ratio */
+    max-width: 410px; 
+    height: 116px; 
     border-radius: 10px;
-    object-fit: cover; /* Adjust this to cover to maintain aspect ratio */
+    object-fit: cover; 
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -80,26 +80,26 @@ body {
     background-color: #1b1b1b;
     padding: 8px;
     border-radius: 20px;
-    height: 500px; /* Adjust as needed to match the desired height */
+    height: 500px; 
 }
 
 .features h2 {
-    font-size: 20px; /* Adjust font size */
+    font-size: 20px;
     color: #FF6F00;
 }
 
 .feature-list {
-    padding: 15px; /* Space within the feature list */
+    padding: 15px;
 }
 
 .feature h3 {
-    font-size: 15px; /* Font size for feature titles */
+    font-size: 15px;
     color: #f8b700;
-    margin-bottom: 2px; /* Space below feature titles */
+    margin-bottom: 2px; 
 }
 
 .feature p {
-    font-size: 14.5px; /* Font size for feature descriptions */
+    font-size: 14.5px;
 }
 
 /* Product Specs */
@@ -160,14 +160,14 @@ body {
 
 @media (min-width: 769px) {
     .sidebar {
-        flex: 1; /* Allow sidebar to grow */
+        flex: 1; 
     }
 
     .main-image {
-        flex: 2; /* Allow main image to grow more */
+        flex: 2;
     }
 
     .features {
-        flex: 1;/* Adjust features to grow */
+        flex: 1;
     }
 }
