@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 .header {
     background-color: #151515;
     border-bottom: 3px solid #FF6F00;
@@ -24,7 +23,6 @@ body {
     color: #FF6F00;
 }
 
-/* Product Overview */
 .product-overview {
     background-color: #1b1b1b;
     border-radius: 10px;
@@ -35,14 +33,12 @@ body {
     color: #FF6F00;
 }
 
-/* Content Layout */
 .content {
     gap: 10px;
     display: flex;
     flex-wrap: nowrap;
 }
 
-/* Sidebar */
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -50,10 +46,10 @@ body {
 }
 
 .thumbnail {
-    max-width: 410px; 
-    height: 116px; 
+    max-width: 410px;
+    height: 116px;
     border-radius: 10px;
-    object-fit: cover; 
+    object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -63,7 +59,6 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Main Image */
 .main-image {
     border-radius: 10px;
     overflow: hidden;
@@ -75,12 +70,11 @@ body {
     object-fit: cover;
 }
 
-/* Features */
 .features {
     background-color: #1b1b1b;
     padding: 8px;
     border-radius: 20px;
-    height: 500px; 
+    height: auto;
 }
 
 .features h2 {
@@ -95,14 +89,13 @@ body {
 .feature h3 {
     font-size: 15px;
     color: #f8b700;
-    margin-bottom: 2px; 
+    margin-bottom: 2px;
 }
 
 .feature p {
     font-size: 14.5px;
 }
 
-/* Product Specs */
 .product-specs {
     background-color: #1b1b1b;
     border-radius: 10px;
@@ -114,7 +107,6 @@ body {
     color: #FF6F00;
 }
 
-/* Call to Action */
 .call-to-action {
     background-color: #1b1b1b;
     border-radius: 10px;
@@ -131,7 +123,6 @@ body {
     color: #fff;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -153,14 +144,15 @@ body {
         height: 250px;
         object-fit: cover;
     }
+
     .features {
-        height: 420px; 
+        height: 420px;
     }
 }
 
 @media (min-width: 769px) {
     .sidebar {
-        flex: 1; 
+        flex: 1;
     }
 
     .main-image {
