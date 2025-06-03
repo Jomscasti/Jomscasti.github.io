@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="shared/style.css" rel="stylesheet">
+    <link rel="icon" href="assets/image/focus.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm"
+        style="background: linear-gradient(135deg, #1e3c72, #2a5298); z-index: 1;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/image/focus.png" width="50" height="50" alt="Logo" class="me-2" />
+                <span class="fw-bold text-light text-uppercase">Pomodoro</span>
+            </a>
+            <button class="navbar-toggler text-light border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-semibold text-uppercase px-3 active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-semibold text-uppercase px-3" href="#pomodoroFeatures">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-semibold text-uppercase px-3" href="#howItWorks">Steps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-semibold text-uppercase px-3" href="#embedPomodoro">Pomodoro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>      
+
+    <div class="container-fluid my-5 text-center">
+        
+        <section id="heroBanner" class="py-2 position-relative"
+            style="background: linear-gradient(135deg, #f8f9fa, #e6e6f0); overflow: hidden;">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <h1 class="mb-4 fw-bold text-uppercase" style="letter-spacing: 1px; color: #1e3c72;">Welcome to Your
+                            Productivity Dashboard</h1>
+                        <p class="lead text-muted mb-4">Stay focused and manage your time effectively using the Pomodoro Timer.
+                        </p>
+                        <a href="#embedPomodoro" class="custom-button me-3">Start Now</a>
+                        <a href="#howItWorks" class="custom-button content">Learn How</a>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <img src="assets/image/focus.png" alt="Focus illustration" class="img-fluid"
+                            style="max-height: 500px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+        <section id="pomodoroFeatures" class="py-5" style="background-color: #ffffff;">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase" style="letter-spacing: 1px;">Pomodoro Timer Features</h2>
+                    <p class="text-muted">Your personal productivity companion. Refined, focused, and flexible.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Feature 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#2a5298"
+                                    class="bi bi-bullseye" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                                    <path d="M8 13a5 5 0 1 0 0-10A5 5 0 0 0 8 13zm0 1A6 6 0 1 1 8 1a6 6 0 0 1 0 12z" />
+                                    <path d="M8 11a3 3 0 1 0 0-6A3 3 0 0 0 8 11z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2">Boost Focus</h5>
+                            <p class="text-muted">Power through tasks with structured intervals and rest periods to
+                                sharpen your
+                                concentration.</p>
+                            <button class="custom-button content mt-3">Focus</button>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#a18cd1"
+                                    class="bi bi-book" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.828c.885-.37 2.154-.745 3.5-.745s2.615.375 3.5.745V14.5c-.885-.37-2.154-.745-3.5-.745S1.885 14.13 1 14.5V2.828z" />
+                                    <path d="M14 2.5a1 1 0 0 0-1-1h-1v12h1a1 1 0 0 0 1-1v-10z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2">Improve Learning</h5>
+                            <p class="text-muted">Build stronger memory retention by breaking your sessions into
+                                high-efficiency
+                                study intervals.</p>
+                            <button class="custom-button content mt-3">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#2a5298"
+                                    class="bi bi-clock-history" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.515 3.258a.5.5 0 0 1 .99.124v4.225l3.015 1.508a.5.5 0 0 1-.448.894l-3.254-1.627A.5.5 0 0 1 8 7.5V3.382a.5.5 0 0 1 .515-.124z" />
+                                    <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zm0-1A7 7 0 1 0 8 1a7 7 0 0 0 0 14z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2">Customizable Durations</h5>
+                            <p class="text-muted">Define your ideal study, short break, and long break times —
+                                personalize your
+                                rhythm.</p>
+                            <button class="custom-button content mt-3">Customize</button>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fbc2eb"
+                                    class="bi bi-volume-up" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.536 14.01a.5.5 0 0 1-.65-.759 6.5 6.5 0 0 0 0-10.502.5.5 0 1 1 .65-.759 7.5 7.5 0 0 1 0 12.02z" />
+                                    <path
+                                        d="M10.707 12.475a.5.5 0 0 1-.707-.707 4 4 0 0 0 0-5.657.5.5 0 1 1 .707-.707 5 5 0 0 1 0 7.071z" />
+                                    <path
+                                        d="M8.486 11.607a.5.5 0 0 1-.707-.707 2 2 0 0 0 0-2.828.5.5 0 1 1 .707-.707 3 3 0 0 1 0 4.242z" />
+                                    <path
+                                        d="M3.707 11.5H2a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5h1.707L7 2.12v11.76L3.707 11.5z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2">Sound Personalization</h5>
+                            <p class="text-muted">Pick from curated alarm and background sounds to boost productivity or
+                                keep
+                                calm and focused.</p>
+                            <button class="custom-button content mt-3">Set Sounds</button>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#2a5298"
+                                    class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                                    <path d="M0 0h1v15h15v1H0V0zm10 10h1v3h-1v-3zm-3-5h1v8H7V5zm-3 2h1v6H4V7z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2">Track Progress</h5>
+                            <p class="text-muted">Visualize your completed sessions and time spent — stay motivated and
+                                see
+                                results.</p>
+                            <button class="custom-button content mt-3">Track</button>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#a18cd1"
+                                    class="bi bi-flower1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.5 0a.5.5 0 0 1 1 0v1.625a1.25 1.25 0 1 1-1 0V0zm6.5 8a.5.5 0 0 1 0 1h-1.625a1.25 1.25 0 1 1 0-1H14zm-6.5 6.5a.5.5 0 0 1-1 0v-1.625a1.25 1.25 0 1 1 1 0V14.5zm-6.5-6.5a.5.5 0 0 1 0-1h1.625a1.25 1.25 0 1 1 0 1H1z" />
+                                    <path d="M8 8.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2">Prevent Burnout</h5>
+                            <p class="text-muted">Establish a relaxing and balanced workflow — stay productive without
+                                overloading your mind.</p>
+                            <button class="custom-button content mt-3">Relax</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="howItWorks">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase" style="letter-spacing: 1px;">How It Works</h2>
+                    <p class="text-muted">Master productivity in 4 simple steps.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Step 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm text-center">
+                            <div class="mb-3">
+                                <svg width="40" height="40" fill="#2a5298" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 1a1 1 0 0 0-1 1v9.586l-2.293-2.293a1 1 0 1 0-1.414 1.414l4.707 4.707 4.707-4.707a1 1 0 0 0-1.414-1.414L13 11.586V2a1 1 0 0 0-1-1z" />
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold">Step 1: Choose a Mode</h6>
+                            <p class="text-muted">Pick from Study, Short Break, or Long Break to get started.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm text-center">
+                            <div class="mb-3">
+                                <svg width="40" height="40" fill="#a18cd1" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 4a8 8 0 0 1 8 8v6h2v2H2v-2h2v-6a8 8 0 0 1 8-8zm0 2a6 6 0 0 0-6 6v6h12v-6a6 6 0 0 0-6-6z" />
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold">Step 2: Start the Timer</h6>
+                            <p class="text-muted">Click the Start button to begin your session. Stay focused!</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm text-center">
+                            <div class="mb-3">
+                                <svg width="40" height="40" fill="#fbc2eb" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 3a9 9 0 1 1-6.364 15.364L3 21l2.636-2.636A9 9 0 0 1 12 3zm0 2a7 7 0 1 0 4.95 11.95L19 18l-1.05-2.05A7 7 0 0 0 12 5z" />
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold">Step 3: Stay on Track</h6>
+                            <p class="text-muted">Work until the timer rings. Take breaks in between to recharge.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 border rounded-4 h-100 shadow-sm text-center">
+                            <div class="mb-3">
+                                <svg width="40" height="40" fill="#2a5298" viewBox="0 0 24 24">
+                                    <path
+                                        d="M5 13c0-1.1.9-2 2-2h4V9H7c-2.2 0-4 1.8-4 4s1.8 4 4 4h4v-2H7c-1.1 0-2-.9-2-2zm14-2h-4v2h4c1.1 0 2 .9 2 2s-.9 2-2 2h-4v2h4c2.2 0 4-1.8 4-4s-1.8-4-4-4z" />
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold">Step 4: Repeat & Reflect</h6>
+                            <p class="text-muted">Complete multiple sessions and review your progress.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="embedPomodoro" class="py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 style="font-weight: 700; letter-spacing: 1px;">
+                        FOCUS MODE <span style="color: #2a5298;">ACTIVATED</span>
+                    </h2>
+                    <p class="text-muted">Stay productive with your personalized Pomodoro timer below</p>
+                </div>
+
+                <div class="embed-wrapper rounded-4">
+                    <iframe src="pomodoro.html" title="Pomodoro Timer" width="100%" height="445"
+                        style="border: none; border-radius: 12px;" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="mt-5 py-4" style="background: linear-gradient(135deg, #1e3c72, #2a5298); color: #f8f9fa;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase fw-bold">About Pomodoro</h5>
+                    <p class="small">Stay focused and break distractions with our time-tested Pomodoro Timer. Balance work
+                        and rest easily.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#pomodoroFeatures" class="text-light text-decoration-none d-block py-1">Features</a></li>
+                        <li><a href="#howItWorks" class="text-light text-decoration-none d-block py-1">How It Works</a></li>
+                        <li><a href="#settings" class="text-light text-decoration-none d-block py-1">Custom Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase fw-bold">Connect with Us</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="footer-link me-2 text-light">
+                            <img src="https://img.icons8.com/ios-filled/20/ffffff/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="footer-link me-2 text-light">
+                            <img src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#" class="footer-link text-light">
+                            <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="small mb-0">&copy; 2025 Pomodoro Dashboard. All rights reserved.</p>
+        </div>
+    </footer>      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
