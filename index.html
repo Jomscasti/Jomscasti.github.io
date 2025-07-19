@@ -1,79 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Under Maintenance | Jomari Castillo</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="myPersonal/logo.png" type="image/png" />
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #450c4a, #31097e);
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .maintenance-container {
-            max-width: 600px;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        }
-
-        .maintenance-container img {
-            width: 100px;
-            margin-bottom: 20px;
-        }
-
-        .maintenance-container h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .maintenance-container p {
-            font-size: 1.1rem;
-            color: #ccc;
-            margin-bottom: 30px;
-        }
-
-        .btn-hero {
-            background-color: #6a0dad;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 1rem;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .btn-hero:hover {
-            background-color: #540b8a;
-            transform: scale(1.05);
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hi! Welcome To my World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link href="assets/css/portfolio.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="maintenance-container">
-        <img src="myPersonal/logo.png" alt="Logo" />
-        <h1>Under Maintenance</h1>
-        <p>My portfolio is currently being revamped to serve you better.<br />Please check back soon!</p>
-        <a href="mailto:jomaricastillo8@gmail.com">
-            <button class="btn-hero">Contact Me</button>
-        </a>
+<body style="background-color: #e5d4f7;">
+    <div class="custom-cursor"></div>
+
+    <nav class="navbar navbar-expand-lg glass-navbar p-0">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid" style="height: 60px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="color: #010440;">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Highlights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid text-dark pt-5" style="min-height: 80vh;" id="home">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between px-4 px-lg-5 pt-4">
+
+            <!-- Left Content -->
+            <div class="text-center text-lg-start mb-5 mb-lg-0">
+                <h1 class="display-4 fw-bold mb-3" style="color: #010440;">
+                    Hello Everyone, <br>
+                    <span>I Am Jomari G. Castillo</span>
+                </h1>
+                <h2 class="h5 text-secondary mb-4">Web Designer & Developer</h2>
+
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                    <a href="JomariCastillo-CV.pdf" class="btn btn-outline-dark" download>Download CV</a>
+                    <a href="mailto:jomaricastillo8@gmail.com" class="btn btn-dark">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="text-center">
+                <img src="assets/images/me.png" class="img-fluid" alt="Jomari G. Castillo" style="max-height: 550px;">
+            </div>
+        </div>
     </div>
+
+    <!-- Full-Width Marquee -->
+    <div class="marquee-banner">
+        <div class="marquee-text">
+            Meet Jomari Castillo: Microsoft Youth Ambassador and Rising Innovator in IT with Experience in Google
+            Developer Student
+            Club and Microsoft Youth Ambassador Fellowships. //
+            Meet Jomari Castillo: Microsoft Youth Ambassador and Rising Innovator in IT with Experience in Google
+            Developer Student
+            Club and Microsoft Youth Ambassador Fellowships. //
+            Meet Jomari Castillo: Microsoft Youth Ambassador and Rising Innovator in IT with Experience in Google
+            Developer Student
+            Club and Microsoft Youth Ambassador Fellowships.
+        </div>
+    </div>
+
+    <!-- About & Contact Card -->
+    <section class="about-highlight py-5 position-relative overflow-hidden" id="about">
+        <div class="container position-relative">
+            <div class="glass-card p-4 rounded shadow-lg mx-auto" style="max-width: 900px;">
+                <div class="row g-4 align-items-center">
+
+                    <!-- Profile Image -->
+                    <div class="col-md-4 text-center">
+                        <img src="assets/images/me.png" alt="Jomari G. Castillo"
+                            class="img-fluid rounded border border-3 border-primary" style="max-height: 300px;">
+                    </div>
+
+                    <!-- Info and Contact -->
+                    <div class="col-md-8">
+                        <h3 class="fw-bold mb-3 text-primary-emphasis text-center text-md-start">Meet Jomari</h3>
+                        <p class="lead text-center text-md-start">
+                            I'm <strong>Jomari G. Castillo</strong>, an <strong>ENFP-T</strong> with a strong passion
+                            for leadership and creativity. Currently pursuing <strong>BSIT at PUP Sto. Tomas
+                                Campus</strong>.
+                            Designing has become one of my favorite creative outlets — when it comes to creativity and
+                            initiative,
+                            you can count on me.
+                        </p>
+
+                        <ul class="list-unstyled mt-3 small">
+                            <li class="mb-1"><i class="bi bi-person-fill me-2 text-primary"></i><strong>Name:</strong>
+                                Jomari G. Castillo</li>
+                            <li class="mb-1"><i
+                                    class="bi bi-geo-alt-fill me-2 text-danger"></i><strong>Location:</strong>
+                                Calamba, Laguna</li>
+                            <li class="mb-1"><i
+                                    class="bi bi-diagram-3-fill me-2 text-warning"></i><strong>MBTI:</strong>
+                                ENFP-T</li>
+                            <li class="mb-1"><i
+                                    class="bi bi-telephone-fill me-2 text-success"></i><strong>Phone:</strong>
+                                <span class="text-muted">secret</span>
+                            </li>
+                            <li class="mb-1"><i class="bi bi-envelope-fill me-2 text-danger"></i><strong>Email:</strong>
+                                <a href="mailto:jomaricastillo8@gmail.com"
+                                    class="text-decoration-none text-dark">jomaricastillo8@gmail.com</a>
+                            </li>
+                            <li class="mb-1"><i class="bi bi-instagram me-2 text-danger"></i><strong>Instagram:</strong>
+                                <a href="https://www.instagram.com/jomsheeesh/" target="_blank"
+                                    class="text-decoration-none text-dark">@jomsheeesh</a>
+                            </li>
+                            <li class="mb-1"><i class="bi bi-linkedin me-2 text-primary"></i><strong>LinkedIn:</strong>
+                                <a href="https://www.linkedin.com/in/jomari-castillo/" target="_blank"
+                                    class="text-decoration-none text-dark">linkedin.com/in/jomari-castillo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="about.html"><button class="btn btn-light shadow-sm px-4 py-2">Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section class="py-5" id="projects" style="background-color: #010440;">
+        <div class="container">
+            <h2 class="mb-4 fw-bold text-white">Featured Project</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="glass-card">
+                        <div class="row g-4 align-items-center">
+
+                            <!-- Embedded Preview -->
+                            <div class="col-12 col-md-6">
+                                <!-- Mobile View: Taller Embed -->
+                                <div class="d-md-none"
+                                    style="position: relative; padding-bottom: 125%; height: 0; overflow: hidden;">
+                                    <iframe src="https://jomscasti.github.io/mu-see-you" title="Mu-See-You Preview"
+                                        allowfullscreen
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                                    </iframe>
+                                </div>
+
+                                <!-- Desktop View -->
+                                <div class="ratio ratio-16x9 d-none d-md-block">
+                                    <iframe src="https://jomscasti.github.io/mu-see-you" title="Mu-See-You Preview"
+                                        allowfullscreen style="border:0;">
+                                    </iframe>
+                                </div>
+                            </div>
+
+                            <!-- Project Description -->
+                            <div class="col-12 col-md-6 text-white">
+                                <h4 class="fw-bold mb-2 text-white">Mu-See-You Gallery</h4>
+                                <p class="mb-3">
+                                    A responsive and dynamic gallery site that automatically loads images from
+                                    categorized
+                                    folders.
+                                    Built with HTML, CSS, JS, and PHP — it's a showcase of modular design and gallery
+                                    automation without a CMS.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="https://jomscasti.github.io/mu-see-you" target="_blank"
+                                        class="btn btn-light">Open Preview</a>
+                                    <a href="https://github.com/Jomscasti/mu-see-you" target="_blank"
+                                        class="btn btn-outline-light">View Code</a>
+                                    <a href="projects.html"
+                                        class="btn btn-outline-secondary text-white border-white">View
+                                        All Projects</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsive Footer -->
+    <footer class="footer mt-auto py-5 border-top">
+        <div class="container">
+            <div class="row gy-4 text-center text-md-start">
+                <!-- About -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary-emphasis">Jomari G. Castillo</h5>
+                    <p class="mb-0 small text-muted">
+                        Passionate BSIT student, web designer & developer.<br>
+                        Driven by creativity, grounded in purpose.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary-emphasis">Navigate</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#home" class="text-decoration-none text-dark">Home</a></li>
+                        <li><a href="#projects" class="text-decoration-none text-dark">Projects</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-dark">About Me</a></li>
+                        <li><a href="mailto:jomaricastillo8@gmail.com"
+                                class="text-decoration-none text-dark">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary-emphasis">Let's Connect</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-4">
+                        <a href="mailto:jomaricastillo8@gmail.com" class="text-dark" target="_blank">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jomsheeesh/" class="text-dark" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jomari-castillo/" class="text-dark" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/LieutenantClowker8" class="text-dark" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://github.com/Jomscasti" class="text-dark" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 text-muted">
+
+            <p class="text-center text-muted small mb-0">
+                &copy; 2025 <strong>Jomari G. Castillo</strong>. Crafted with care. Inspired by growth.
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/comments.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
