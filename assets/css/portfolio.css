@@ -27,6 +27,70 @@ h5 {
     z-index: 1000;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+.glass-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+}
+.about-highlight {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    /* base level */
+}
+
+.floating-comment {
+    position: absolute;
+    left: -200px;
+    color: rgba(1, 4, 64, 0.829);
+    font-weight: bold;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+    /* BELOW the card (card is z-index 10) */
+    animation: floatRight linear forwards;
+}
+@keyframes floatRight {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(120vw);
+        /* fly past screen */
+        opacity: 0;
+    }
+}
+
+.featured-card {
+    background-color: rgba(155, 93, 229, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
 
 .marquee-banner {
     width: 100%;
@@ -54,3 +118,34 @@ h5 {
     }
 }
 
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f3e8ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #9b5de5, #c085e6, #fba3e2);
+    border-radius: 10px;
+    border: 2px solid #f3e8ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #7b2cbf, #ab47bc, #ff8ecf);
+}
+
+.custom-cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #9b5de5;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
