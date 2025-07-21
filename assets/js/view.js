@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let i = 1;
 
     function tryNextImage() {
-        if (i > 99) return; // Prevent infinite loop just in case
+        if (i > 99) return; 
 
         const baseName = String(i).padStart(2, "0");
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function tryExtension() {
             if (tryIndex >= extensions.length) {
-                if (!found) return; // Stop trying this index
+                if (!found) return;
             } else {
                 const ext = extensions[tryIndex];
                 const img = new Image();
@@ -52,11 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     found = true;
                     i++;
-                    tryNextImage(); // Try the next index
+                    tryNextImage();
                 };
                 img.onerror = function () {
                     tryIndex++;
-                    tryExtension(); // Try next extension for this index
+                    tryExtension();
                 };
             }
         }
