@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highlight View</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/portfolio.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="background-color: #e5d4f7;">
+
+    <nav class="navbar navbar-expand-lg glass-navbar p-0">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid" style="height: 60px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="color: #010440;">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html#highlightsContainer">Highlights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Title -->
+    <section class="py-5 text-center text-white" style="background-color: #7b4bbf;">
+        <div class="container">
+            <h1 id="highlightTitle" class="fw-bold display-4 my-5 pt-3"></h1>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img id="featuredImage" class="img-fluid rounded shadow w-90" alt="Featured Image">
+            </div>
+            <div class="col-lg-6 text-start">
+                <h1 id="highlightTitle" class="display-5 fw-bold text-primary mb-3"></h1>
+                <p id="highlightNarrative" class="fs-5 lh-lg text-muted" style="text-align: justify;"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container mb-5">
+        <h2 class="text-center fw-bold mb-4">More from this Category</h2>
+        <div class="row g-3" id="galleryContainer"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-5 border-top">
+        <div class="container">
+            <div class="row gy-4 text-center text-md-start">
+                <!-- About -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary-emphasis">Jomari G. Castillo</h5>
+                    <p class="mb-0 small text-muted">
+                        Passionate BSIT student, web designer & developer.<br>
+                        Driven by creativity, grounded in purpose.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary-emphasis">Navigate</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#home" class="text-decoration-none text-dark">Home</a></li>
+                        <li><a href="#projects" class="text-decoration-none text-dark">Projects</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-dark">About Me</a></li>
+                        <li><a href="mailto:jomaricastillo8@gmail.com"
+                                class="text-decoration-none text-dark">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary-emphasis">Let's Connect</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-4">
+                        <a href="mailto:jomaricastillo8@gmail.com" class="text-dark" target="_blank">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jomsheeesh/" class="text-dark" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jomari-castillo/" class="text-dark" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/LieutenantClowker8" class="text-dark" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://github.com/Jomscasti" class="text-dark" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 text-muted">
+
+            <p class="text-center text-muted small mb-0">
+                &copy; 2025 <strong>Jomari G. Castillo</strong>. Crafted with care. Inspired by growth.
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/highlights.js"></script>
+    <script src="assets/js/view.js"></script>
+</body>
+
+</html>
