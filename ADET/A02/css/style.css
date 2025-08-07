@@ -1,0 +1,64 @@
+    body {
+        background-color: #f9f5ff;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+        background-color: #6f42c1 !important;
+    }
+
+    .navbar-brand {
+        color: #ffffff !important;
+        font-size: 1.6rem;
+    }
+
+    .navbar .form-control,
+    .navbar .btn-outline-light {
+        border-radius: 30px;
+    }
+
+    .sidebar-link {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar-link:hover {
+        background-color: #ffffff;
+        color: #6f42c1;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .sidebar {
+        background-color: #6f42c1;
+        height: 85vh;
+    }
+
+    .card {
+        border-radius: 20px;
+    }
+
+    .btn-primary {
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+    }
+
+    .btn-primary:hover {
+        background-color: #5a34a1;
+        border-color: #5a34a1;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #a97be0;
+        border-radius: 4px;
+    }
