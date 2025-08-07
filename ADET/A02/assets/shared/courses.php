@@ -8,7 +8,7 @@
 
         <div class="col-12 col-md-6 col-lg-4 py-2">
             <div class="card mb-3 py-2 shadow-sm h-100">
-                <img src="img/html.jpg" class="card-img-top" alt="HTML Course">
+                <img src="assets/img/html.jpg" class="card-img-top" alt="HTML Course">
                 <div class="card-body">
                     <h5 class="card-title">Introduction to HTML</h5>
                     <p class="card-text">Learn how to build the structure of a webpage using HTML tags, elements, and
@@ -20,7 +20,7 @@
 
         <div class="col-12 col-md-6 col-lg-4 py-2">
             <div class="card mb-3  py-2 shadow-sm h-100">
-                <img src="img/css.jpg" class="card-img-top" alt="CSS Course">
+                <img src="assets/img/css.jpg" class="card-img-top" alt="CSS Course">
                 <div class="card-body">
                     <h5 class="card-title">Getting Started with CSS</h5>
                     <p class="card-text">Style your websites with colors, fonts, layouts, and more using Cascading Style
@@ -32,7 +32,7 @@
 
         <div class="col-12 col-md-6 col-lg-4 py-2">
             <div class="card mb-3 shadow-sm h-100">
-                <img src="img/bootstrap.jpg" class="card-img-top" alt="Bootstrap Course">
+                <img src="assets/img/bootstrap.jpg" class="card-img-top" alt="Bootstrap Course">
                 <div class="card-body">
                     <h5 class="card-title">Responsive Design with Bootstrap</h5>
                     <p class="card-text">Master mobile-friendly web design using Bootstrap’s responsive grid system and

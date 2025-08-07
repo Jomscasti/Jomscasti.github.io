@@ -27,15 +27,15 @@ if (isset($_GET['page'])) {
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="icon" href="img/techturo.png" type="image/png">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/techturo.png" type="image/png">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
         <div class="container-fluid">
-            <img src="img/Wtech.png" alt="Logo" width="40" height="40">
+            <img src="assets/img/Wtech.png" alt="Logo" width="40" height="40">
             <a class="navbar-brand fw-bold text-white ms-2" href="?page=feed">
                 <i class="bi bi-lightning-fill me-2"></i>Tech-Turo
             </a>
@@ -83,7 +83,7 @@ if (isset($_GET['page'])) {
             <div class="col-12 col-lg-10">
                 <div style="height: 85vh; overflow-y: auto; background-color: #f8f9fa;">
                     <div class="card border-0 rounded-4 shadow-sm p-4 h-100">
-                        <?php include("shared/" . $page . ".php"); ?>
+                        <?php include("assets/shared/" . $page . ".php"); ?>
                     </div>
                 </div>
             </div>
