@@ -1,52 +1,98 @@
-# EZ-Parallax
-Parallax templates for easy inclusions to existing websites
+# 🌌 Parallax Metaverse Theme
 
-## Preview
-You can preview the site at [cjdeclaro.github.io](https://cjdeclaro.github.io/EZ-Parallax/)
+An immersive parallax scrolling template built for modern, futuristic web experiences. Ideal for showcasing virtual worlds, metaverse concepts, creative portfolios, or storytelling sites.
 
-## Implementation
-#### Adding to your site
-Add the following code to your parallax section:
-```
+🔗 **Live Preview:** [jomscasti.github.io/parallax](https://jomscasti.github.io/parallax)
+
+---
+
+## ✨ Features
+
+- Smooth multi-layer parallax scrolling
+- Easy integration into any HTML project
+- Fully customizable image layers
+- Lightweight and responsive design
+- Ideal for virtual themes, Web3, and tech showcases
+
+---
+
+## 🚀 Quick Start
+
+### 1. Add the Parallax Section
+
+Paste this into your HTML file where you want the parallax effect:
+
+```html
 <section>
-	<div class="keyart" id="parallax">
-		<div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
-		<div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
-		<div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
-		<div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
-		<div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
-		<div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
-		<div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
-		<div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
-		<div class="keyart_layer" id="keyart-8" data-speed="100"></div>
-	</div>
+  <div class="keyart" id="parallax">
+    <div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
+    <div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
+    <div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
+    <div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
+    <div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
+    <div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
+    <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
+    <div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
+    <div class="keyart_layer" id="keyart-8" data-speed="100"></div>
+  </div>
 </section>
 ```
-The default setting has 8 parallax layers
 
-#### Customizing the images
-Go to **__/img__** folder and edit the images into **__.png__** format
+---
 
-#### Adding your main content
-Put your site content inside:
+### 2. Add Your Main Content
 
-```
+Below the parallax section, add your site’s content:
+
+```html
 <section class="main-content">
-	<div style="/*Your own style*/">
-		<!--Put your content here-->
-	</div>
+  <div style="/* Your custom styles here */">
+    <!-- Your content goes here -->
+  </div>
 </section>
 ```
 
-#### Adding more layers
-Edit the **__parallax.css__** to add layers by adding:
-```
-#keyart-n {
-	background-image: url(img/imgname.png);
+---
+
+### 3. Customize the Layers
+
+To change layer images, update files in the `/img` folder using `.png` format.
+
+Edit `parallax.css` to define each layer:
+
+```css
+#keyart-0 {
+  background-image: url(img/your-image.png);
 }
 ```
-and calling it in your **.html** file
 
-#### Customizing layer speed
-Change the `data-speed` value from the .html code o speed up or slow down movement speed
+---
 
+### 4. Adjust Speed
+
+Change the `data-speed` value in the HTML to make layers scroll faster or slower:
+
+```html
+<div class="keyart_layer parallax" data-speed="20"></div>
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+parallax/
+├── index.html
+├── parallax.html
+├── parallax.css
+├── style.css
+├── img/
+└── README.md
+```
+
+---
+
+## 🧠 Credits
+
+Originally adapted from **EZ-Parallax by cjdeclaro**  
+Modified and enhanced by **JomCasti** for the **Metaverse Theme Experience**
