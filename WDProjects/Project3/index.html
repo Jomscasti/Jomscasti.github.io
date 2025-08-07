@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary shadow fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand text-warning" href="Project3.html" target="_blank">
+            <a class="navbar-brand text-warning" href="https://jomscasti.github.io/" target="_blank">
                 <img src="assets/logo.png" width="40" height="24" alt="Logo" />
                 <b class="ms-2">Volcano Wonders</b>
             </a>
@@ -27,64 +27,73 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#fun">Fun Fact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#volcano">Volcano</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="funFact.html">Fun Fact</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link active" href="#socials">Socials</a></li>
                 </ul>
-                <button class="btn btn-outline-secondary ms-3 active" onclick="changeMode()">Fire Mode</button>
+                <button class="btn btn-outline-secondary ms-3 active" onclick="changeMode()">Volcano Mode</button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="container mt-3 pt-5">
-        <div class="row">
-            <div class="col">
-                <h1 class="display-3 fw-bold">Fun Fact</h1>
-            </div>
-        </div>
+    <!-- Header -->
+    <div class="container text-center mt-2 pt-5">
+        <h1 class="display-5 fw-bold">Welcome to the Wonders of Volcanoes</h1>
     </div>
 
-    <!-- Hero Background Image -->
+    <!-- Hero Image -->
     <div class="container-fluid">
         <div class="row">
             <div class="col"
-                style="background-image: url('https://scitechdaily.com/images/Supervolcano-Eruption.gif'); background-size: cover; background-position: center; height: 500px;">
+                style="background-image: url('https://i.pinimg.com/originals/e0/25/13/e02513d3fd48347a9fe8e9e9c2b56d56.gif'); background-size: cover; background-position: center; height: 500px;">
             </div>
         </div>
     </div>
 
-    <!-- Fire Mode Video -->
+    <!-- Video Background -->
     <video id="fireVideo" autoplay muted loop
-        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; display: none;">
-        <source src="assets/videos/firebg.mp4" type="video/mp4" />
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; display: none; filter: brightness(50%);">
+        <source src="assets/videos/magmabg.mp4" type="video/mp4" />
     </video>
 
-    <!-- Fun Fact Content -->
-    <div class="container" id="fun">
-        <div class="row mt-5">
-            <div class="col">
-                <h1 class="display-3 text-center fw-bold">Volcano Fun Facts</h1>
-                <p class="textJustify">
-                    Did you know? There are approximately 1,500 potentially active volcanoes around the world, and about
-                    50 of them erupt each year!
-                    These eruptions can range from slow lava flows to massive explosive events that can shoot ash high
-                    into the atmosphere.
-                    Some of the most active volcanoes, like Kīlauea in Hawaii and Mount Etna in Italy, have been
-                    erupting for decades or even centuries!
-                </p>
-            </div>
-        </div>
-
-        <!-- Gallery of Volcanoes -->
+    <!-- Volcano Gallery -->
+    <div class="container my-5" id="volcano">
+        <h1 class="display-3 fw-bold text-center">Active Volcano Gallery</h1>
         <div class="row" id="cardContainer"></div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="container text-center mt-5">
+        <h3 class="btnHeading">Want to know more about <span class="highlight"><b>Active Volcanoes?</b></span></h3>
+        <p class="fText">Did you know that volcanoes can erupt with incredible power, shaping landscapes and influencing
+            climates worldwide?</p>
+        <a href="funFact.html" target="_blank" class="btnFun">FUN FACT</a>
+    </div>
+
+    <!-- Map Section -->
+    <div class="container mt-5">
+        <h1 class="display-3 fw-bold text-center">Map of Active Volcanoes and Recent Earthquakes</h1>
+        <div class="text-center mt-3">
+            <button type="button" onclick="expandContent()" class="btn btnFun" id="btnExpand">Expand</button>
+        </div>
+    </div>
+
+    <!-- Real-Time Feed -->
+    <div class="container my-5" id="footer" style="display: none;">
+        <h2 class="text-center fw-bold">Real-Time Volcanic Activity</h2>
+        <p class="text-center">Stay up to date with the latest volcanic eruptions and activity across the globe.</p>
+        <iframe src="https://earthquakes.volcanodiscovery.com/" width="100%" height="500px"
+            style="border: 2px solid #EE8130; background-color: white;" title="Volcanic Activity Feed"></iframe>
     </div>
 
     <!-- Footer -->
     <footer class="container-fluid mt-5 border-top py-3" id="socials">
         <div class="d-flex flex-wrap justify-content-between align-items-center">
             <div class="col-md-4 d-flex align-items-center">
-                <a href="index.html" class="me-2 text-body-secondary text-decoration-none lh-1">
+                <a href="#home" class="me-2 text-body-secondary text-decoration-none lh-1">
                     <img src="assets/logo.png" width="40" height="24" alt="Logo" />
                 </a>
                 <span class="text-body-secondary">© 2024 Active Volcanoes</span>
@@ -103,13 +112,15 @@
 
     <!-- Script -->
     <script>
-        const volcanoNames = ["Eyjafjallajökull", "Mount Nyiragongo", "Sakurajima", "Mount Stromboli"];
-        const volcanoPics = ["mountEJ.jpg", "mountN.jpg", "mountSa.jpg", "stromboli.jpg"];
+        const volcanoNames = ["Mount Vesuvius", "Mount St. Helens", "Kilauea", "Mount Etna", "Mauna Loa", "Mount Merapi"];
+        const volcanoPics = ["mountV.jpg", "mountS.jpg", "kilauea.jpg", "mountE.jpg", "mountM.jpg", "merapi.jpg"];
         const volcanoDescriptions = [
-            "Eyjafjallajökull in Iceland erupted in 2010, causing massive disruptions to air travel across Europe due to volcanic ash.",
-            "In the Democratic Republic of Congo has the world’s fastest flowing lava, which can reach speeds of up to 60 km/h.",
-            "Sakurajima in Japan is one of the most active volcanoes, with frequent eruptions that have been ongoing since 1955.",
-            "It has been erupting almost continuously for over 2,000 years, earning it the nickname 'Lighthouse of the Mediterranean.'"
+            "Mount Vesuvius is famous for the eruption that buried Pompeii in AD 79.",
+            "Mount St. Helens erupted violently in 1980, reshaping the surrounding landscape.",
+            "Kīlauea is one of the most active volcanoes in the world, located in Hawaii.",
+            "Mount Etna, on the east coast of Sicily, Italy, is Europe's tallest and most active volcano.",
+            "Mauna Loa is the world's largest volcano, found in Hawaii, known for its long and slow lava flows.",
+            "Mount Merapi in Indonesia frequently erupts, one of the most dangerous volcanoes due to its proximity to populated areas."
         ];
 
         for (let i = 0; i < volcanoNames.length; i++) {
@@ -133,6 +144,14 @@
             document.getElementById(id).classList.remove("eruptionShadow");
         }
 
+        function expandContent() {
+            const footer = document.getElementById("footer");
+            const btnExpand = document.getElementById("btnExpand");
+            const isHidden = footer.style.display === "none";
+            footer.style.display = isHidden ? "block" : "none";
+            btnExpand.innerText = isHidden ? "Collapse" : "Expand";
+        }
+
         let colorMode = "light";
         function changeMode() {
             const body = document.getElementById("body");
@@ -140,13 +159,13 @@
             if (colorMode === "light") {
                 colorMode = "dark";
                 fireVideo.style.display = "block";
-                body.style.backgroundColor = "transparent";
                 body.setAttribute("data-bs-theme", "dark");
+                body.style.backgroundColor = "transparent";
             } else {
                 colorMode = "light";
                 fireVideo.style.display = "none";
-                body.style.backgroundColor = "";
                 body.setAttribute("data-bs-theme", "light");
+                body.style.backgroundColor = "";
             }
         }
     </script>
