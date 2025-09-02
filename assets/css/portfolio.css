@@ -149,3 +149,63 @@ h5 {
     z-index: 9999;
     transition: background 0.2s ease, transform 0.1s ease;
 }
+
+.blob-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Each blob */
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(110px);
+    opacity: 0.6;
+}
+
+/* Blob colors & scattered positions */
+.blob1 {
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle at center, #ff9a9e, #fad0c4);
+    top: -180px;
+    left: -160px;
+}
+
+.blob2 {
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle at center, #a1c4fd, #c2e9fb);
+    top: 10%;
+    right: -200px;
+}
+
+.blob3 {
+    width: 430px;
+    height: 430px;
+    background: radial-gradient(circle at center, #fbc2eb, #a6c1ee);
+    bottom: -220px;
+    left: 10%;
+}
+
+.blob4 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, #84fab0, #8fd3f4);
+    bottom: 5%;
+    right: 12%;
+}
+
+.blob5 {
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle at center, #ffe29f, #ffa99f);
+    top: 45%;
+    left: 35%;
+    opacity: 0.35;
+}
