@@ -1,11 +1,11 @@
 const projects = [
-    {
-        title: "MUSEEYOU",
-        description: "A personal museum concept combining the ideas of 'Museum,' 'See,' and 'You,' designed to highlight moments and the art of living.",
-        image: "assets/images/works/museeyou.png",
-        preview: "https://jomscasti.github.io/mu-see-you",
-        code: "https://github.com/Jomscasti/mu-see-you"
-    },
+    // {
+    //     title: "MUSEEYOU",
+    //     description: "A personal museum concept combining the ideas of 'Museum,' 'See,' and 'You,' designed to highlight moments and the art of living.",
+    //     image: "assets/images/works/museeyou.png",
+    //     preview: "https://jomscasti.github.io/mu-see-you",
+    //     code: "https://github.com/Jomscasti/mu-see-you"
+    // },
     {
         title: "Arcane",
         description: "ARCANE is a visually immersive, responsive landing page inspired by the animated Netflix series Arcane.",
